@@ -5,7 +5,11 @@ public class MyWorld extends World {
         super(600, 400, 1);
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 300);
+        createPizza();
+    }
+    public void createPizza(){
         Pizza pizza = new Pizza();
-        addObject(pizza, 300, 0);
+        int x = Greenfoot.getRandomNumber(600);
+        addObject(pizza, x, 0);
     }
 }
